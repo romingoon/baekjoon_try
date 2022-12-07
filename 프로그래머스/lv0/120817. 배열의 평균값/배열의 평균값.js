@@ -1,7 +1,3 @@
 const solution = (numbers) => {
-  let sum = 0;
-  for (item of numbers) {
-    sum += item;
-  }
-  return sum / numbers.length;
+  return numbers.reduce((acc, currVal) => acc + currVal) / numbers.length;
 };
