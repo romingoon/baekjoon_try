@@ -1,5 +1,3 @@
-function solution(array) {
-    array.sort((a,b)=>a-b);
-    const val = parseInt(array.length/2);
-    return array[val];
+const solution = (array) =>{
+    return array.sort((a,b)=>a-b)[parseInt(array.length/2)];
 }
